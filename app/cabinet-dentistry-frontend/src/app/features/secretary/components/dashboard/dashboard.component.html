@@ -1,0 +1,88 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center">
+  <span class="mask  opacity-8" style="background: linear-gradient(to right,  #09a26f, #b1f3da);"></span>
+  <span class="mask  opacity-8" style="background: linear-gradient(to bottom,  #09a26f, #ffffff);"></span>
+  <div class="container-fluid">
+    <div class="row align-items-center text-start">
+      <div class="mt-3 ">
+        <div class="mt-3">
+          <button class="btn btn-primary" (click)="addAppointment()">Ajouter rendez-vous</button>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-6 d-flex justify-content-end">
+        <form class="mt-3 w-md-100" style="max-width: 350px; width: 100%;">
+          <div class="input-group input-group-rounded input-group-merge">
+            <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="chercher" aria-label="Search">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <span class="fa fa-search"></span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid mt--8">
+  <div class="row justify-content-center">
+    <div class="card-body">
+      <div class="container-fluid mt--7">
+        <div class="row justify-content-center">
+          <div class="card-body">
+            <div class="row mt-2">
+              <div class="col">
+                <div class="table-responsive custom-table-margin">
+                  <div class="card shadow" >
+                    <div class="card-header border-0" style="background-color: #e6efe9;">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <h3 class="mb-0">Liste d'attente</h3>
+                        </div>
+                        <div class="col text-right">
+                          <a href="#!" class="btn btn-sm btn-primary">See all</a>
+                        </div>
+                      </div>
+                    </div>
+                    <table class="table align-items-center table-flush text-center custom-table" style="background-color: #278566;">
+                      <thead class="custom-thead">
+                      <tr>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">N° téléphone</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr *ngFor="let patient of patients" class="align-middle">
+                        <th scope="row">{{ patient.firstname }}</th>
+                        <td>{{ patient.lastname }}</td>
+                        <td>{{ patient.email }}</td>
+                        <td>{{ patient.phoneNumber }}</td>
+                        <td class="text-right">
+                          <div class="btn-group" role="group">
+                            <!-- Example action button
+                            <button type="button" class="btn btn-sm btn-icon-only text-light" title="Supprimer" (click)="deleteClient(patient.id)">
+                              <i class="fas fa-trash-alt"></i>
+                            </button>
+                            -->
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

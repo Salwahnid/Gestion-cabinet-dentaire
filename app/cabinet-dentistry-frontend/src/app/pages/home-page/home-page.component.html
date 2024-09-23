@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Cabinet Dentaire</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #f7f9fc;">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../../../assets/img/logo1.png" alt="Logo" style="width: 210px; height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">À Propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#doctor">Docteur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-success ms-2" (click)="openLoginModal()">Connexion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-success ms-2" (click)="openSignupModal()">Inscription</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header id="home" class="bg-success text-white text-center py-5">
+  <div class="container">
+    <h1>Bienvenue au Cabinet Dentaire</h1>
+    <p>Votre sourire, notre priorité.</p>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="/assets/img/img_1.png" alt="Cabinet Dentaire" class="img-fluid rounded">
+      </div>
+      <div class="col-lg-6">
+        <h2>À propos de nous</h2>
+        <p>Nous sommes un cabinet dentaire moderne offrant une gamme complète de services dentaires de haute qualité. Notre équipe de professionnels qualifiés est dédiée à vous fournir les meilleurs soins dentaires dans un environnement confortable et accueillant.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Nos Services</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <i class="fas fa-tooth fa-3x text-success"></i>
+        <h4 class="my-3">Soins dentaires généraux</h4>
+        <p>Examen dentaire, nettoyage, obturations et plus.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="fas fa-smile fa-3x text-success"></i>
+        <h4 class="my-3">Esthétique dentaire</h4>
+        <p>Blanchiment, facettes, et corrections esthétiques.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="fas fa-align-center fa-3x text-success"></i>
+        <h4 class="my-3">Orthodontie</h4>
+        <p>Traitements pour l'alignement des dents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Doctor Presentation Section -->
+<section id="doctor" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Rencontrez notre docteur</h2>
+    <div class="row align-items-center">
+      <div class="col-lg-4 text-center">
+        <img src="/assets/img/img.png" alt="Docteur" class="img-fluid rounded-circle mb-3">
+      </div>
+      <div class="col-lg-8">
+        <h3>Dr. Jean Dupont</h3>
+        <p>Le Dr. Jean Dupont est un dentiste expérimenté avec plus de 20 ans d'expérience. Il est spécialisé dans les soins dentaires esthétiques et orthodontiques, offrant des traitements personnalisés pour chaque patient.</p>
+        <p>Le Dr. Dupont est diplômé de l'Université de Paris et membre de l'Association Dentaire Française. Il est dédié à offrir des soins dentaires de qualité supérieure tout en maintenant un environnement de travail respectueux et amical.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Ce que disent nos patients</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p class="mb-0">"Une équipe formidable! J'ai reçu les meilleurs soins dentaires de ma vie."</p>
+          <footer class="blockquote-footer">Marie L.</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p class="mb-0">"Le Dr. Dupont est incroyablement professionnel et attentionné. Je recommande vivement."</p>
+          <footer class="blockquote-footer">Pierre D.</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p class="mb-0">"Mon sourire n'a jamais été aussi beau grâce à leur équipe d'experts."</p>
+          <footer class="blockquote-footer">Sophie M.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Location and Contact Section -->
+<section id="contact1" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Nous Contacter</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <h4>Heures d'ouverture</h4>
+        <ul>
+          <li>Lundi - Vendredi: 9h00 - 18h00</li>
+          <li>Samedi: 9h00 - 13h00</li>
+          <li>Dimanche: Fermé</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <h4>Notre Localisation</h4>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345095075!2d144.95373631531563!3d-37.8172099797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f16b57c9b5a!2sDental%20Clinic!5e0!3m2!1sen!2sau!4v1596796829865!5m2!1sen!2sau"
+            width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section de contact -->
+<section id="contact" class="py-5 text-light" style="background-color: #2c5046;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Contactez-nous</h5>
+        <p>Pour toute question ou prise de rendez-vous, n'hésitez pas à nous contacter.</p>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-map-marker-alt"></i> 123 Rue Exemple, Paris</li>
+          <li><i class="fa fa-phone-alt"></i> +33 1 23 45 67 89</li>
+          <li><i class="fa fa-envelope"></i> contact@cabinetdentaire.com</li>
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <h5>Envoyez-nous un message</h5>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Nom">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="E-mail">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-light">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div id="loginModal" class="modal" [ngClass]="{'show-modal': showLoginModal}">
+  <div class="modal-content">
+    <span class="close" (click)="closeLoginModal()">&times;</span>
+    <!-- Embedding the login component -->
+    <app-login></app-login>
+  </div>
+</div>
+
+<div id="signupModal" class="modal" [ngClass]="{'show-modal': showSignupModal}">
+  <div class="modal-content">
+    <span class="close" (click)="closeSignupModal()">&times;</span>
+    <!-- Embedding the login component -->
+    <app-signup></app-signup>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="text-center text-white py-4" style="background-color: #1c2833;">
+  <div class="container">
+    <p class="mb-0">© 2024 Cabinet Dentaire. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

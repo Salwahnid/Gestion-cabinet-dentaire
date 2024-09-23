@@ -1,0 +1,57 @@
+// Variables
+$primary-color: #2c4481;
+$background-color: #f0f0f0;
+$white-color: #ffffff;
+$font-family: Arial, sans-serif;
+$border-radius: 8px;
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+// Variables
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.form-control {
+  border-radius: 20px;
+  background-color: #F8F8F8;
+}
+
+.form-group label {
+  color: $white-color;
+}
+
+.btn {
+  background-color: #ffc107;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.card-title {
+  color: #ffc107;
+}
+
+.header {
+  background: linear-gradient(to right,  #09a26f, #b1f3da);
+}
+
+.Montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: #b1f3da;
+  margin-bottom: 10px;
+}
+
+.section-divider {
+  border-top: 2px solid $primary-color;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.info-divider {
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

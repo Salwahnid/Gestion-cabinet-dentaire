@@ -1,0 +1,72 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center">
+  <span class="mask  opacity-8" style="background: linear-gradient(to right,  #09a26f, #b1f3da);"></span>
+  <div class="header pb-8 pt-5 pt-md-8">
+  </div></div>
+<div class="container-fluid mb-xl-4 mt--7">
+  <!-- Dark table -->
+  <div class="row mt-2">
+    <div class="col">
+      <div class="table-responsive">
+        <!-- Loading spinner -->
+        <!--div class="loader-container">
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div-->
+
+        <div class="container-fluid" style="margin-bottom: 8rem">
+          <div class=" mb-xl-5 card border-0 shadow px-1 custom-card">
+            <form (submit)="createSubmit()">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="card-title text-right Montserrat">Créer un nouveau dossier</h2>
+                  <div type="submit" [routerLink]="['/secretary']">
+                    <i class="fas fa-sign-out-alt"></i>
+                  </div>
+                </div>
+                <hr style="color:#6415FF" />
+                <div class="card-text py-2">
+                  <div class="form-group">
+                    <label for="product" class="Montserrat">Sélectionner le type de compte</label>
+                    <select class="form-control" id="product" name="product">
+                      <option value="hssab1">Assitant</option>
+                      <option value="hssab1">Secretary</option>
+                    </select>
+                  </div>
+                  <!-- New section for Personal Information -->
+                  <h3 class="section-title Montserrat">Informations personnelles</h3>
+                  <div class="section-divider"></div>
+
+                  <div class="form-group">
+                    <label for="firstName" class="Montserrat">Nom *</label>
+                    <input type="text" class="form-control" id="firstName"  [(ngModel)]="secretaryRegistrationRequest.secretaryRequest.lastname" name="firstName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName" class="Montserrat">Prénom *</label>
+                    <input type="text" class="form-control" id="lastName"  [(ngModel)]="secretaryRegistrationRequest.secretaryRequest.firstname"  name="lastName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumber" class="Montserrat">Téléphone *</label>
+                    <input type="text" class="form-control" id="phoneNumber" [(ngModel)]="secretaryRegistrationRequest.secretaryRequest.phoneNumber"  name="phoneNumber" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="Montserrat">Email</label>
+                    <input type="email" class="form-control" id="email"  [(ngModel)]="secretaryRegistrationRequest.secretaryRequest.email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="Montserrat">Date de naissance</label>
+                    <input type="date" class="form-control" id="birthdate"  [(ngModel)]="secretaryRegistrationRequest.secretaryRequest.birthdate" name="birthdate" required>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-block mt-2" >
+                  <span class="Montserrat">Créer</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

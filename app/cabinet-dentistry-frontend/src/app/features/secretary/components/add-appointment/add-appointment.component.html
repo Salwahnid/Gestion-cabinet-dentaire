@@ -1,0 +1,57 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center">
+  <span class="mask  opacity-8" style="background: linear-gradient(to right,  #09a26f, #b1f3da);"></span>
+  <div class="header pb-8 pt-5 pt-md-8">
+  </div></div>
+<div class="container-fluid mt--7">
+  <!-- Dark table -->
+  <div class="row mt-2">
+    <div class="col">
+      <div class="table-responsive">
+        <!-- Loading spinner -->
+        <!--div class="loader-container">
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div-->
+
+        <div class="container-fluid">
+          <div class="card border-0 shadow px-1 custom-card">
+            <form (submit)="createSubmit()">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="card-title text-right Montserrat">Créer un nouveau dossier</h2>
+                  <div type="submit" [routerLink]="['/secretary']">
+                    <i class="fas fa-sign-out-alt"></i>
+                  </div>
+                </div>
+                <hr style="color:#6415FF" />
+                <div class="card-text py-2">
+                  <!-- New section for Personal Information -->
+                  <h3 class="section-title Montserrat">Dettails du rendez-vous</h3>
+                  <div class="section-divider"></div>
+
+                  <div class="form-group">
+                    <label for="firstName" class="Montserrat">Nom *</label>
+                    <input type="text" class="form-control" id="firstName"  [(ngModel)]="appointmentRegistrationRequest.appointmentRequest.patientId.firstname" name="firstName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName" class="Montserrat">Prénom *</label>
+                    <input type="text" class="form-control" id="lastName"  [(ngModel)]="appointmentRegistrationRequest.appointmentRequest.patientId.lastname"  name="lastName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumber" class="Montserrat">Téléphone *</label>
+                    <input type="text" class="form-control" id="phoneNumber" [(ngModel)]="appointmentRegistrationRequest.appointmentRequest.date"  name="Date" required>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-block mt-2" >
+                  <span class="Montserrat">Créer</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

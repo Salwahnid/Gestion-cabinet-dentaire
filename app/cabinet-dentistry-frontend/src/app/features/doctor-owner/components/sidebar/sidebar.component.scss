@@ -1,0 +1,70 @@
+/* Variables */
+$navbar-bg-color: #f9fcfb;
+$link-color: #395945;
+$link-hover-color: #616261;
+$link-active-color: #15794e;
+$active-link-underline-color: green;
+$icon-active-color: #15794e;
+$icon-color: #395945;
+/* Styles */
+.navbar-vertical {
+  background-color: $navbar-bg-color;
+
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+  font-size: 1.05rem;
+  line-height: 2;
+
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: $link-active-color;
+}
+
+.navbar-nav .nav-item .nav-link.active::after {
+  background-color: $active-link-underline-color;
+}
+
+
+
+.navbar-nav .nav-item .nav-link.active i {
+  color: $icon-active-color;
+}
+
+
+.ni {
+  color: $icon-color;
+}
+
+.navbar-vertical.navbar-expand-md .navbar-nav .nav-link.active:before{
+  border-left: 3px solid #1aae6f;
+  top: 0.25rem;
+  bottom: 0.25rem;
+
+}
+
+.navbar-brand-img {
+  width: 200px; /* Définir la largeur souhaitée */
+  height: 5rem; /* La hauteur s'ajustera automatiquement pour garder les proportions */
+  display: block; /* S'assurer que l'image est affichée comme un bloc */
+  margin-left: 3px;
+}
+
+@media (min-width: 768px) {
+  .navbar-vertical.navbar-expand-md .navbar-brand-img {
+    max-height: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-vertical .navbar-collapse:before {
+    content: "";
+    display: block;
+    margin: 2px;
+  }
+}
